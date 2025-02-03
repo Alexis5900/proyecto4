@@ -136,3 +136,20 @@ exports.update = async (req, res) => {
     res.json({ msg: "Reserva actualizada con éxito.", data: reservas[index] });
 };
 
+
+// =============================================
+// e. Eliminar una reserva específica (DELETE)
+// =============================================
+exports.delete = async (req, res) => {
+    const reservaId = parseInt(req.params.id);
+    let reservas = await leerReservas();
+    const index = reservas.findIndex(r => r.id === reservaId);
+
+    if (index === -1) {
+        return res.status(404).json({ msg: "Reserva no encontrada." });
+    }
+
+    reservas.splice(index, 1);
+    await escribirReservas(reservas);
+    res.json({ msg: "Reserva eliminada con éxito." });
+};
