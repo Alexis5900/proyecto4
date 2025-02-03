@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "hotel": "Alexis",
+    "tipo_habitacion": "Uno",
+    "num_huespedes": 1,
+    "fecha": "2025-02-01",
+    "estado": "Confirmada"
+  },
+  {
+    "id": 2,
+    "hotel": "Nibaldo",
+    "tipo_habitacion": "Dos",
+    "num_huespedes": 2,
+    "fecha": "2025-02-02",
+    "estado": "Pendiente"
+  },
+  {
+    "id": 3,
+    "hotel": "Molina",
+    "tipo_habitacion": "Tres",
+    "num_huespedes": 3,
+    "fecha": "2025-02-03",
+    "estado": "Confirmada"
+  },
+  {
+    "id": 4,
+    "hotel": "Olivos",
+    "tipo_habitacion": "Cuatro",
+    "num_huespedes": 4,
+    "fecha": "2025-02-04",
+    "estado": "Pendiente"
+  },
+  {
+    "id": 5,
+    "hotel": "Nuevo Hotel",
+    "tipo_habitacion": "Doble",
+    "num_huespedes": 2,
+    "fecha": "2025-03-10",
+    "estado": "Confirmada"
+  }
+]

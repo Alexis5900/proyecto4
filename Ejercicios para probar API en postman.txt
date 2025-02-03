@@ -1,0 +1,98 @@
+
+
+http://localhost:3000
+http://localhost:3000/api-docs/
+
+1.- Crear una Nueva Reserva
+
+Método: POST
+URL: http://localhost:3000/api/reservas
+
+### Crear 4 reservas con esta información
+
+{
+  "hotel": "Alexis",
+  "tipo_habitacion": "Uno",
+  "num_huespedes": 1,
+  "fecha": "2025-02-01",
+  "estado": "Confirmada"
+}
+
+{
+  "hotel": "Nibaldo",
+  "tipo_habitacion": "Dos",
+  "num_huespedes": 2,
+  "fecha": "2025-02-02",
+  "estado": "Pendiente"
+}
+
+{
+  "hotel": "Molina",
+  "tipo_habitacion": "Tres",
+  "num_huespedes": 3,
+  "fecha": "2025-02-03",
+  "estado": "Confirmada"
+}
+
+{
+  "hotel": "Olivos",
+  "tipo_habitacion": "Cuatro",
+  "num_huespedes": 4,
+  "fecha": "2025-02-04",
+  "estado": "Pendiente"
+}
+
+
+2.- Obtener Todas las Reservas
+
+Método: GET
+URL: http://localhost:3000/api/reservas
+
+
+
+3.- Obtener una Reserva por ID
+
+Método: GET
+URL: http://localhost:3000/api/reservas/1
+
+
+4.- Actualizar una Reserva
+Método: PUT
+URL: http://localhost:3000/api/reservas/1
+
+{
+  "tipo_habitacion": "Doble",
+  "num_huespedes": 2,
+  "estado": "Pendiente de Pago"
+}
+
+
+
+5.- Eliminar una Reserva
+Método: DELETE
+URL: http://localhost:3000/api/reservas/1
+
+
+6.- Filtrar Reservas por Hotel
+Método: GET
+URL: http://localhost:3000/api/reservas?hotel=Molina
+
+
+7.- Filtrar Reservas por Rango de Fechas
+Método: GET
+URL: http://localhost:3000/api/reservas?fecha_inicio=2025-02-03&fecha_fin=2025-02-04
+
+
+8.- Filtrar Reservas por Tipo de Habitación
+Método: GET
+URL: http://localhost:3000/api/reservas?tipo_habitacion=Cuatro
+
+
+9.- Filtrar Reservas por Estado
+Método: GET
+URL: http://localhost:3000/api/reservas?estado=Pendiente
+
+
+10.- Filtrar Reservas por Número de Huéspedes
+Método: GET
+URL: http://localhost:3000/api/reservas?num_huespedes=4
