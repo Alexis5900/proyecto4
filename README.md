@@ -28,12 +28,22 @@ Este proyecto se ejecuta tanto en entorno local como en **Render**.
 
 ---
 
-## **Endpoints de la API**
+## **Endpoints de la API - Para probar con Postman**
 
 ### 1.- Crear una Nueva Reserva
 **Método:** POST  
 **URL Local:** [`http://localhost:3000/api/reservas`](http://localhost:3000/api/reservas)  
 **URL en Render:** [`https://proyecto4-kqpr.onrender.com/api/reservas`](https://proyecto4-kqpr.onrender.com/api/reservas)  
+
+```json
+  {
+    "hotel": "Jorge",
+    "tipo_habitacion": "Cinco",
+    "num_huespedes": 5,
+    "fecha": "2025-02-05",
+    "estado": "Confirmada"
+  }
+```
 
 ---
 
@@ -104,3 +114,15 @@ Este proyecto se ejecuta tanto en entorno local como en **Render**.
 **Método:** GET  
 **URL Local:** [`http://localhost:3000/api/reservas?num_huespedes=4`](http://localhost:3000/api/reservas?num_huespedes=4)  
 **URL en Render:** [`https://proyecto4-kqpr.onrender.com/api/reservas?num_huespedes=4`](https://proyecto4-kqpr.onrender.com/api/reservas?num_huespedes=4)  
+
+---
+
+## **Imágenes del Proyecto, algunas pruebas con el endpoint 1 y 2**
+
+
+**Prueba Post, Insertar:**
+![Post](./images/prueba_insertar_post.png)
+
+
+**Prueba Get, Obtener todo:**
+![Get](./images/prueba_obtenertodo_get.png)
